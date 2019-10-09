@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="goBack()">
+                <ion-icon name="arrow-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>用户登录</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+    <ion-card>
+        <ion-item>
+            <ion-label position="floating">用户名:</ion-label>
+            <ion-input [(ngModel)]="uname"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">密码:</ion-label>
+            <ion-input [(ngModel)]="upwd" type="password"></ion-input>
+        </ion-item>
+    </ion-card>
+    <ion-button expand="block" (click)="doLogin()">登录</ion-button>
+    <!-- 其它登录方式 -->
+    <!-- <ion-grid>
+        <ion-row size="6">
+            <ion-col></ion-col>
+        </ion-row>
+    </ion-grid> -->
+</ion-content>
